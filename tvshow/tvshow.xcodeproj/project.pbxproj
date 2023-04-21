@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD9232C529F2529A009284B0 /* TVShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9232C429F2529A009284B0 /* TVShowInfoView.swift */; };
+		DD9922B829F1A2B6001F316C /* EpisodeInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9922B729F1A2B6001F316C /* EpisodeInfoView.swift */; };
 		DDD1FDF429F11A8F0033CD74 /* tvshowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD1FDF329F11A8F0033CD74 /* tvshowApp.swift */; };
 		DDD1FDF629F11A8F0033CD74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD1FDF529F11A8F0033CD74 /* ContentView.swift */; };
 		DDD1FDF829F11A910033CD74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD1FDF729F11A910033CD74 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD9232C429F2529A009284B0 /* TVShowInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowInfoView.swift; sourceTree = "<group>"; };
+		DD9922B729F1A2B6001F316C /* EpisodeInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeInfoView.swift; sourceTree = "<group>"; };
 		DDD1FDF029F11A8F0033CD74 /* tvshow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvshow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD1FDF329F11A8F0033CD74 /* tvshowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvshowApp.swift; sourceTree = "<group>"; };
 		DDD1FDF529F11A8F0033CD74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 				DDD1FDF529F11A8F0033CD74 /* ContentView.swift */,
 				DDD1FDF729F11A910033CD74 /* Assets.xcassets */,
 				DDD1FDF929F11A910033CD74 /* Preview Content */,
+				DD9922B729F1A2B6001F316C /* EpisodeInfoView.swift */,
+				DD9232C429F2529A009284B0 /* TVShowInfoView.swift */,
 			);
 			path = tvshow;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDD1FDF629F11A8F0033CD74 /* ContentView.swift in Sources */,
+				DD9232C529F2529A009284B0 /* TVShowInfoView.swift in Sources */,
+				DD9922B829F1A2B6001F316C /* EpisodeInfoView.swift in Sources */,
 				DDD1FDF429F11A8F0033CD74 /* tvshowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
