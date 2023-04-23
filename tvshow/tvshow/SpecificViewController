@@ -1,0 +1,55 @@
+//
+//
+//  Created by Camyl Fernandez on 4/23/23.
+//
+//// https://developer.apple.com/documentation/uikit/uitableviewdelegate/handling_row_selection_in_a_table_view?language=objc
+
+import UIKit
+
+class SpecificViewController: UITableViewController {
+    
+    var episodes = [EpisodeInfo]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return episodes.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = episodes[indexPath.row].name
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedEpisode = episodes[indexPath.row]
+        let detailViewController = DetailViewController()
+        detailViewController.episode = selectedEpisode
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
+}
+
+class DetailViewController: UIViewController {
+    
+    var episode: EpisodeInfo?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}
+
+struct EpisodeInfo: Codable {
+    let airDate: String?
+    let episodeNumber: Int?
+    let name: String
+    let overview: String
+    let stillPath: String?
+}
